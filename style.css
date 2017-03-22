@@ -1,0 +1,177 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.jumbotron {
+    background: url(img/cover.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    min-width: 100%;
+    padding: 0!important;
+    display: table;
+}
+#jumbotron-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+#jumbotron-content h1 {
+    font-size: 12rem;
+    font-weight: 200;
+}
+/* ABOUT */
+#about {
+    background-color: #fff;
+    color: #000;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.about {
+    padding: 50px 0;
+}
+.logo {
+    font-size: 200px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+    color: #000;
+}
+/* TEAM */
+#team {
+    background: url(img/cover.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    padding: 50px;
+}
+#team > .container > h2 {
+    font-size: 50px;
+}
+.space {
+    margin: 30px 0;
+}
+.thumb {
+    position: relative;
+    margin-bottom: 30px; 
+}
+.thumb > img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: block;
+}
+.thumb .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5 ease;
+    background-color: #f6f6f6;
+}
+.thumb:hover > .overlay {
+    opacity: .8;
+}
+.thumb > .overlay > .text {
+    color: #000;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+/* SPONSOR */
+#sponsor {
+    background: #fff;
+    height: 100%;
+    color: #000;
+    padding-top: 50px;
+}
+.logo-sponsor {
+    padding: 50px 0;
+}
+/* FOOTER */
+#contact {
+    padding: 50px 0;
+}
+footer {
+    background-color: #fff;
+    color: #000;
+}
+footer > p {
+    margin: 20px;
+}
+/* NAVBAR */
+.navbar {
+    margin-bottom: 0;
+    background-color: transparent;
+    z-index: 999;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+    padding-bottom: 10px;
+}
+.navbar li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    border-bottom: 2px solid #fff;
+    background-color: transparent !important;
+}
+.navbar-default, .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.nav-colored { 
+    background-color:#000; 
+}
+.nav-transparent { 
+    background-color:transparent;
+}
+/* SLIDE IN EFFECT */
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+/* MEDIA QUERY*/
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
